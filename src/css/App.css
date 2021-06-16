@@ -1,0 +1,16 @@
+:root {
+  --yellow: #f2dc5d;
+  --pink: #ef476f;
+  --purple: #3b1c32;
+  --blue: #afc1d6;
+  --black: #090809;
+}
+
+.drum-machine {
+  background-color: #000;
+  width: 80%;
+  max-width: 600px;
+  min-width: 450px;
+  height: 500px;
+  margin: 4rem auto;
+}
