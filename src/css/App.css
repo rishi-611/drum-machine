@@ -1,16 +1,55 @@
 :root {
-  --yellow: #f2dc5d;
-  --pink: #ef476f;
-  --purple: #3b1c32;
-  --blue: #afc1d6;
-  --black: #090809;
+  --light: #eeeff3;
+  --darker: #18191d;
+  --dark: #4a4d52;
+  --secondary: #fa8e8f;
+  --secondary-dark: #d83c4b;
+}
+
+* {
+  color: var(--light);
 }
 
 .drum-machine {
-  background-color: #000;
-  width: 80%;
-  max-width: 600px;
-  min-width: 450px;
-  height: 500px;
-  margin: 4rem auto;
+  background-image: linear-gradient(
+    to left bottom,
+    #18191d,
+    #151417,
+    #110f11,
+    #0a0809,
+    #000000
+  );
+
+  max-width: 800px;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 16px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* drumpad */
+.drum-pad-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  grid-template-rows: repeat(3, 5rem);
+  gap: 0.6rem;
+}
+
+.drum-pad {
+  border: 1.5px solid var(--secondary-dark);
+
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.drum-pad:hover {
+  border: 2px solid var(--secondary);
 }
